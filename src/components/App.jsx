@@ -35,9 +35,11 @@ export class App extends Component {
     return (
       <div>
         <Section title="Please leave feedback">
-          <Feedback type="GOOD" action={this.updateGood}/>
-          <Feedback type="NEUTRAL" action={this.updateNeutral}/>
-          <Feedback type="BAD" action={this.updateBad}/>
+          <div style={{display: 'flex'}}>
+            <Feedback type="GOOD" action={this.updateGood}/>
+            <Feedback type="NEUTRAL" action={this.updateNeutral}/>
+            <Feedback type="BAD" action={this.updateBad}/>
+          </div>
         </Section>
         <Section title="Statistics">
           {

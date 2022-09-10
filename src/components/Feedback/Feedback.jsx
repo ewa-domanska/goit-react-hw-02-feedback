@@ -1,8 +1,6 @@
-import {Section} from "../Section/Section";
-
 export const Feedback = ({type, action}) => {
   return (
-    <div>
+    <div style={{padding: '5px'}}>
       <button onClick={action}>{type}</button>
     </div>
   );
